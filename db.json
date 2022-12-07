@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "category": "Alcoholic Beverages",
+      "name": "Emperador Light 750ml ",
+      "brand": "Emperador Brands",
+      "price": "138",
+      "file": "products/emperador.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Fit n Right Pineapple",
+      "category": "Beverages",
+      "brand": "Del Monte",
+      "price": "50"
+    },
+    {
+      "id": 4,
+      "name": "Piatos Cheese 450ml",
+      "category": "Snacks",
+      "brand": "Jack n Jill",
+      "price": "45"
+    },
+    {
+      "id": 5,
+      "name": "Efficascent Oil Extreme 50ml",
+      "category": "Pharmacies",
+      "brand": "Efficascent",
+      "price": "125"
+    },
+    {
+      "id": 6,
+      "name": "Ethyl Alcohol 500ml",
+      "category": "Personal Care",
+      "brand": "Hygienix",
+      "price": "91"
+    }
+  ]
+}

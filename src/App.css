@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.checkOut {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.checkOutContainer {
+  border: solid 1px black;
+  display: block;
+}
+
+.display {
+  display: none;
+}

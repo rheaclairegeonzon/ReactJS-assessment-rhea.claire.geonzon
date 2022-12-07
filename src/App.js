@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { BrowserRouter as Routers, Route, Routes } from 'react-router-dom'
+import Navbar from './Navbar'
+import Products from './Products'
+import AddProduct from './AddProduct'
+import VendorProducts from './VendorProducts'
+import ProductDetails from './ProductDetails'
+import ProductEdit from './ProductEdit'
+import CartItems from './CartItems'
+import { ShoppinCartProvider } from './context/shoppingCartContext'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ShoppinCartProvider>
+      <div className='App'>
+        <Routers>
+          <Navbar />
+          <Routes>
+            <Route path='/' element={<Products />}></Route>
+            <Route path='/AddProduct' element={<AddProduct />}></Route>
+            <Route path='/product/:id' element={<ProductDetails />}></Route>
+            <Route path='/vendor' element={<VendorProducts />}></Route>
+            <Route path='/product/edit/:id' element={<ProductEdit />}></Route>
+            <Route path='/cart-item' element={<CartItems />}></Route>
+          </Routes>
+        </Routers>
+      </div>
+    </ShoppinCartProvider>
+  )
 }
 
-export default App;
+export default App
